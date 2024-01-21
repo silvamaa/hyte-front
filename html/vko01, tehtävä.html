@@ -34,6 +34,12 @@
         padding: 30px 25px;
       }
 
+      nav img {
+        height: 65px;
+        float: left;
+        margin-right: 10px;
+      }
+
       nav {
         background-color: papayawhip;
         overflow: hidden;
@@ -46,12 +52,14 @@
         color: rgb(78, 59, 203);
         float: left;
         display: block;
+        transition: ease-in-out 0.4s;
       }
 
       nav a:hover {
-        background-color: rgba(78, 59, 203);
+        background-color: rgba(78, 59, 203, 0.621);
         color: rgb(47, 10, 65);
-        
+        transform: scale(1.2);
+        border-radius: 15px;
       }
 
       footer {
@@ -60,8 +68,6 @@
         color: white;
         padding: 25px 20px;
         width: 100%;
-        position: fixed;
-        bottom: 0;
       }
 
       #tausta {
@@ -78,6 +84,7 @@
 
   <body>
     <nav>
+      <img id="logo" src="/kuvat/logo.jpg" alt="Logo">
       <a href="#button1">HOME</a>
       <a href="#button2">ABOUT US</a>
       <a href="#button3">CONTACT</a>
