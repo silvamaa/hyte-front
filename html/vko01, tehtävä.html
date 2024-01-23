@@ -26,14 +26,6 @@
         font-size: 18px;
       }
 
-      main {
-        width: 80%;
-        background-color: rgba(255, 182, 193, 0.808);
-        border: 3px dashed rebeccapurple;
-        margin: 100px auto 50px;
-        padding: 30px 25px;
-      }
-
       nav img {
         height: 65px;
         float: left;
@@ -43,6 +35,9 @@
       nav {
         background-color: papayawhip;
         overflow: hidden;
+        position: sticky;
+        top: 0;
+        z-index: 100;
       }
 
       nav a{
@@ -60,6 +55,22 @@
         color: rgb(47, 10, 65);
         transform: scale(1.2);
         border-radius: 15px;
+      }
+
+      main {
+        width: 80%;
+        background-color: rgba(255, 182, 193, 0.808);
+        border: 3px dashed rebeccapurple;
+        margin: 100px auto 50px;
+        padding: 30px 25px;
+      }
+
+      #mini {
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        top: 125px;
+        right: 25px;
       }
 
       footer {
@@ -82,6 +93,7 @@
     </style>
   </head>
 
+
   <body>
     <nav>
       <img id="logo" src="/kuvat/logo.jpg" alt="Logo">
@@ -90,25 +102,32 @@
       <a href="#button3">CONTACT</a>
     </nav>
 
+
     <div class="clear"></div>
 
+
     <main>
+      <div>
+        <img id="mini" src="/kuvat/mini.jpg" alt="Mini">
+      </div>
 
         <img id="koira" src="/kuvat/koira.jpg" alt="Koira">
         
-        <h1>Golden Retriever</h1>
-        <h3>Cute, Loyal & Everything Else</h3>
+        <h1>Dog's for Good</h1>
+        <h3>The Healthful Trifecta:
+        <br>
+        Enhance Hearts, Minds, and Routines</h3>
 
         <p>
-            Golden Retrievers, with their golden fur and hearts, epitomize affection and loyalty. These gentle giants form strong bonds with their families, excel with children and other pets, and thrive on human companionship.
+          Dogs boost heart health through regular exercise, as their companionship encourages daily walks and play, reducing the risk of cardiovascular issues.
         </p>
         
         <p>
-            Golden Retrievers are not just friendly; they're smart too. Their quick learning ability and eagerness to please make them highly trainable, adapting seamlessly to various roles, from cherished family pet to reliable service or therapy dog.
+          The presence of a dog improves mental well-being by reducing stress and loneliness. Petting a dog releases feel-good hormones, fostering a positive emotional environment.
         </p>
         
         <p>
-            For those seeking a lively companion, the Golden Retriever is an ideal choice. These playful dogs love outdoor activities, from fetching to swimming. With boundless enthusiasm, they bring joy and energy to any household, making them perfect playmates for active individuals and families.
+          Owning a dog establishes a healthy routine, promoting physical activity and providing a sense of purpose. The responsibilities of care contribute to overall well-being and fulfillment.
         </p>
     </main>
 
