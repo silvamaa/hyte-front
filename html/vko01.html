@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>doGGo</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image" href="/kuvat/vko01/logo.jpg"></link>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: monospace;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url(/kuvat/vko01/pink_background.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .clear {
+        clear: both;
+      }
+
+     p {
+        color: blueviolet;
+        font-size: 18px;
+      }
+
+      nav img {
+        height: 65px;
+        float: left;
+        margin-right: 10px;
+      }
+
+      nav {
+        background-color: papayawhip;
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      nav a{
+        text-align: center;
+        text-decoration: none;
+        font-size: 15px;
+        margin: auto;
+        padding: 25px 20px;
+        color: rgb(78, 59, 203);
+        float: left;
+        display: block;
+        transition: ease-in-out 0.4s;
+      }
+
+      nav a:hover {
+        background-color: rgba(78, 59, 203, 0.516);
+        color: rgb(47, 10, 65);
+        transform: scale(1.2);
+        border-radius: 15px;
+      }
+
+
+      main {
+        width: 80%;
+        background-color: rgba(255, 182, 193, 0.808);
+        border: 3px dashed rebeccapurple;
+        margin: 100px auto 50px;
+        padding: 30px 25px;
+      }
+
+
+      footer {
+        background-color: rgba(47, 10, 65, 0.86);
+        text-align: center;
+        color: white;
+        padding: 25px 20px;
+        width: 100%;
+      }
+
+
+      #tausta {
+        margin: auto;
+      }
+
+      #koira {
+        width: 275px;
+        margin: 25px;
+        float: right;
+        border-radius: 50px;
+      }
+
+      #mini {
+        width: 175px;
+        height: 125px;
+        position: absolute;
+        top: 122px;
+        right: 7px;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <nav>
+      <img id="logo" src="/kuvat/vko01/logo.jpg" alt="Logo">
+      <a href="#button1">HOME</a>
+      <a href="#button2">ABOUT US</a>
+      <a href="#button3">CONTACT</a>
+    </nav>
+
+
+    <div class="clear"></div>
+
+
+    <main>
+      <div>
+        <img id="mini" src="/kuvat/vko01/heart-pawprint.png" alt="Mini">
+      </div>
+
+        <img id="koira" src="/kuvat/vko01/koira.jpg" alt="Koira">
+        
+        <h1>Dog's for Good</h1>
+        <h3>The Healthful Trifecta:
+        <br>
+        Enhance Hearts, Minds, and Routines</h3>
+
+        <p>
+          Dogs boost heart health through regular exercise, as their companionship encourages daily walks and play, reducing the risk of cardiovascular issues.
+        </p>
+        
+        <p>
+          The presence of a dog improves mental well-being by reducing stress and loneliness. Petting a dog releases feel-good hormones, fostering a positive emotional environment.
+        </p>
+        
+        <p>
+          Owning a dog establishes a healthy routine, promoting physical activity and providing a sense of purpose. The responsibilities of care contribute to overall well-being and fulfillment.
+        </p>
+    </main>
+
+    <footer>© Copyright doGGo ©</footer>
+  </body>
+</html>
