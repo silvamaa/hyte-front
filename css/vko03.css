@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../kuvat/vko03/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.clear {
+    clear: both;
+}
+
+p {
+    color: rgb(59, 0, 114);
+    font-size: 18px;
+}
+
+/* ----- */
+
+nav img {
+    height: 65px;
+    float: left;
+    margin-right: 10px;
+}
+
+nav {
+    background-color: papayawhip;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin: auto;
+    padding: 25px 20px;
+    color: rgb(78, 59, 203);
+    float: left;
+    display: block;
+    transition: ease-in-out 0.4s;
+}
+
+nav a:hover {
+    background-color: rgba(78, 59, 203, 0.516);
+    color: rgb(47, 10, 65);
+    transform: scale(1.2);
+    border-radius: 15px;
+}
+
+/* ----- */
+
+#jumbo {
+    background-color: rebeccapurple;
+    height: 70vh;
+    background-image: url(../kuvat/vko03/News-Backyard-Dog-Park.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 15px;
+}
+
+#jumbo.about-us {
+    background-image: url(../kuvat/vko03/dogs.jpg);
+}
+
+#jumbo.contact {
+    background-image: url(../kuvat/vko03/snoot.jpg);
+}
+
+/* ----- */
+
+#info-area {
+    background-color: rgba(224, 222, 235, 0.792);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 23px;
+    width: 80%;
+    padding: 30px 25px;
+    margin: 100px auto 50px;
+}
+
+#info-area.about-us {
+    width: 45%;
+}
+
+#info-area.contact {
+    width: 30%;
+}
+
+/* ----- */
+
+main {
+    width: 80%;
+    max-width: 1200px;
+    background-image: url(../kuvat/vko01/pink_background.jpg);
+    border: 3px dashed rgb(91, 70, 209);
+    border-radius: 10px;
+    margin: 100px auto 50px;
+    padding: 30px 25px;
+}
+
+main#contact {
+    padding: 20px 15px;
+    text-align: center;
+    width: 60%;
+    margin: 25px auto 25px;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.592); 
+    border: 1px solid #ccc; 
+    color: #333;
+    font-family: Arial, sans-serif;
+    width: 50%;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+footer {
+    background-color: rgba(47, 10, 65, 0.86);
+    text-align: center;
+    color: white;
+    padding: 25px 20px;
+    width: 100%;
+}
+
+/* ----- */
+
+#tausta {
+    margin: auto;
+}
+
+#koira {
+    width: 275px;
+    margin: 25px;
+    float: right;
+    border-radius: 50px;
+}
+
+#mini {
+    width: 175px;
+    height: 125px;
+    position: absolute;
+    top: 835px;
+    right: 90px;
+}
+
+#puppy {
+    display: block;
+    margin: 45px auto;
+    padding: 15;
+    width: 70%;
+    border: 3px solid aliceblue;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+
+/* ----- */
+
+
+
+/* ----- */
+
+@media screen and (min-width: 900px) {
+    #menu-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav a:not(#logo, #menu-icon) {
+        display: none;
+    }
+
+    #menu-links {
+        display: none;
+    }
+
+    h1, h3, p {
+        text-align: center;
+    }
+
+    #koira, #jumbo, #mini {
+        display: none;
+    }
+
+    .info-area {
+        background-color: white url(../kuvat/vko03/park.jpg) no-repeat center center fixed/cover;
+    }
+}
