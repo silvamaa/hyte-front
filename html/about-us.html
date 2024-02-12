@@ -1,57 +1,65 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>doGGo</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image" href="../kuvat/vko01/logo.jpg" />
+    <link rel="stylesheet" type="text/css" href="../css/vko03.css" />
+  </head>
 
-<head>
-  <title>doGGo</title>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image" href="../kuvat/vko01/logo.jpg">
-  <link rel="stylesheet" type="text/css" href="../css/vko03.css">
-</head>
+  <body>
+    <nav>
+      <img id="logo" src="../kuvat/vko01/logo.jpg" alt="Logo" />
+      <a href="#" id="menu-icon">&#9776;</a>
 
-<body>
-  <nav>
-    <img id="logo" src="../kuvat/vko01/logo.jpg" alt="Logo">
-    <a href="#" id="menu-icon">&#9776;</a>
+      <div id="menu-links">
+        <a href="../html/vko03.html">HOME</a>
+        <a href="../html/about-us.html">ABOUT US</a>
+        <a href="../html/contact.html">CONTACT</a>
+      </div>
+    </nav>
 
-    <div id="menu-links">
-      <a href="../html/vko03.html">HOME</a>
-      <a href="../html/about-us.html">ABOUT US</a>
-      <a href="../html/contact.html">CONTACT</a>
-    </div>
-  </nav>
+    <section id="jumbo" class="about-us"></section>
+    <section id="info-area" class="about-us">About Us</section>
 
-  <section id="jumbo" class="about-us"></section>
-  <section id="info-area" class="about-us">About Us</section>
+    <div class="clear"></div>
 
+    <main>
+      <h1>Welcome to doGGo</h1>
+      <br />
 
-  <div class="clear"></div>
+      <h3>Our commitment</h3>
+      <p>
+        At doGGo, we strive to be your go-to resource for everything related to
+        canine health and its impact on human well-being. From articles and
+        expert advice to heartwarming stories and practical tips, we aim to
+        provide comprehensive information that empowers you to make informed
+        decisions for yourself and your furry friends.
+      </p>
+      <h3>Join our community</h3>
+      <p>
+        Whether you're a seasoned dog owner, considering adding a furry friend
+        to your family, or simply curious about the magic of the human-canine
+        bond, you're invited to join our community. Together, let's explore the
+        pawsitive impact that dogs have on our health and happiness.
+      </p>
+    </main>
 
-  <main>
-    <h1>Welcome to doGGo</h1><br>
+    <section class="boksi">
+      <div id="box" class="box">
+        <strong>Browser language:</strong> <span id="langPlaceholder"></span
+        ><br />
+        <strong>Screen size:</strong> <span id="screenSizePlaceholder"></span
+        ><br />
+        <strong>Browser window size:</strong>
+        <span id="windowSizePlaceholder"></span><br />
+        <strong>Time and date:</strong> <span id="dateTimePlaceholder"></span>
+      </div>
+      <script src="../js/vko03-info.js"></script>
+    </section>
 
-    <h3>Our commitment</h3>
-    <p>
-      At doGGo, we strive to be your go-to resource for everything related to canine health and its impact on human well-being. From articles and expert advice to heartwarming stories and practical tips, we aim to provide comprehensive information that empowers you to make informed decisions for yourself and your furry friends.
-    </p>
-    <h3>Join our community</h3>
-    <p>
-      Whether you're a seasoned dog owner, considering adding a furry friend to your family, or simply curious about the magic of the human-canine bond, you're invited to join our community. Together, let's explore the pawsitive impact that dogs have on our health and happiness.
-    </p>
-  </main>
+    <footer>© Copyright doGGo ©</footer>
 
-<section class="boksi">
-  <div id="box" class="box">
-    <strong>Browser language:</strong> <span id="langPlaceholder"></span><br>
-    <strong>Screen size:</strong> <span id="screenSizePlaceholder"></span><br>
-    <strong>Browser window size:</strong> <span id="windowSizePlaceholder"></span><br>
-    <strong>Time and date:</strong> <span id="dateTimePlaceholder"></span>
-  </div>
-  <script src="../js/vko03-info.js"></script>
-</section>
-
-  <footer>© Copyright doGGo ©</footer>
-
-  <script src="../js/vko03-hamburger.js"></script>
-</body>
-
+    <script src="../js/vko03-hamburger.js"></script>
+  </body>
 </html>

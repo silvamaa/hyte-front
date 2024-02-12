@@ -1,0 +1,142 @@
+* {
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+}
+
+.box {
+  border: 1px solid black;
+  color: aliceblue;
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  background-color: aquamarine;
+  height: 100vh;
+  display: flex;
+}
+
+#left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+#right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: lightpink;
+}
+
+.card {
+  width: 300px;
+  height: 320px;
+  border: 5px ridge palevioletred;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  box-shadow: 0 4px 8px black;
+  background-color: violet;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+}
+
+.card-info {
+  text-align: center;
+  font-size: 10px;
+}
+
+img {
+  width: 100%;
+  border-top-right-radius: 20px;
+}
+
+.upper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: lightpink;
+}
+
+.lower {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightsteelblue;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 200px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  width: 100px;
+  background-color: lightslategray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#displayArea {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: darkslategrey;
+}
+
+.info {
+  padding: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: darkslategrey;
+}
+
+.info2 {
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+  color: darkslategrey;
+}
+
+h3 {
+  background-color: papayawhip;
+  color: darkslategrey;
+  padding: 10px;
+  border-radius: 5px;
+  border: 5px double darkorchid;
+  box-shadow: 0 2px 6px black;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  #left {
+    order: 2;
+  }
+
+  #right {
+    order: 1;
+  }
+}
